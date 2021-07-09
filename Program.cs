@@ -24,8 +24,8 @@ namespace Epsitec.Rnd
                 var page = e.CurrentPaper;
                 var tray = page switch
                 {
-                    2 => 3,
-                    _ => 4,
+                    2 => 2,
+                    _ => 3,
                 };
 
                 e.CurrentPaperSource = e.PaperSources[tray];
@@ -36,8 +36,8 @@ namespace Epsitec.Rnd
                 var page = e.CurrentPaper;
                 var tray = page switch
                 {
-                    2 => 4,
-                    _ => 3,
+                    2 => 3,
+                    _ => 2,
                 };
 
                 e.CurrentPaperSource = e.PaperSources[tray];
